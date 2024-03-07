@@ -6,5 +6,3 @@ const header = document.createElement('header');
 const nav = document.createElement('nav');
 const main = document.createElement('main');
 const footer = document.createElement('footer');
-
-console.dir(root.style)
