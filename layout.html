@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <script>
-    const header = document.getElementsByTagName("head");
+    const head = document.getElementsByTagName("head");
     function htmlImport (element, path){
       fetch(path)
         .then(response => response.text())
@@ -9,8 +9,8 @@
           element.innerHTML = data;
         })
         .catch(error => console.error('Error:', error));
-
     }
+    htmlImport(head, './header.html')
 </script>
 <head>
 
